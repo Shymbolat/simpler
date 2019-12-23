@@ -1,0 +1,44 @@
+
+body {
+    overflow: hidden;
+}
+ 
+div {
+    width: 500px;
+}
+
+.selection {
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label div{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 2px solid #ededed;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;	
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label i{
+    font-size: 16px;
+    opacity: 0; 
+}
+
+label:hover div{
+    background: #dbdbdb; 
+}
+
+input:checked + label i{
+    opacity: 1;
+}
+input:checked + label div{
+    background: #dbdbdb;
+}
